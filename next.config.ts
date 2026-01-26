@@ -1,7 +1,14 @@
+import createMDX from "@next/mdx";
 import type { NextConfig } from "next";
+import createNextIntlPlugin from "next-intl/plugin";
+
+const withMDX = createMDX();
+const withNextIntl = createNextIntlPlugin();
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  experimental: {
+    optimizePackageImports: ["@chakra-ui/react"],
+  },
 };
 
-export default nextConfig;
+export default withNextIntl(withMDX(nextConfig));
