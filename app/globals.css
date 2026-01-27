@@ -1,8 +1,32 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Core colors */
+  --spotify-black: #121212;        /* Main background */
+  --spotify-black-soft: #181818;   /* Cards / sections */
+  --spotify-black-hover: #282828; /* Hover states */
+
+  --spotify-white: #ffffff;
+  --spotify-gray-light: #b3b3b3;  /* Secondary text */
+  --spotify-gray: #a7a7a7;
+  --spotify-gray-dark: #535353;   /* Borders, dividers */
+
+  /* Accent */
+  --spotify-green: #1db954;       /* Primary CTA */
+  --spotify-green-hover: #1ed760;
+
+  /* Text */
+  --text-primary: #ffffff;
+  --text-secondary: #b3b3b3;
+  --text-muted: #6a6a6a;
+
+  /* Background aliases (use these in components) */
+  --bg-primary: #121212;
+  --bg-secondary: #181818;
+  --bg-tertiary: #282828;
+
+  /* Borders */
+  --border-subtle: #2a2a2a;
 }
 
 @theme inline {
