@@ -1,7 +1,8 @@
 "use client";
 import { useRouter } from "next/navigation";
 import SearchInput from "./common/search-input";
-
+import { Box } from "@chakra-ui/react";
+import Services from "./header/services";
 
 export default function MainHeader() {
   const route = useRouter();
@@ -11,7 +12,14 @@ export default function MainHeader() {
   };
 
   return (
-    <div className="flex items-center p-2 h-16 w-full">
+    <Box
+      display="flex"
+      alignItems="center"
+      justifyContent="space-between"
+      gap={4}
+      px={4}
+      py={2}
+    >
       {/* Logo */}
       <button
         className="rounded-full hover:bg-gray-800"
@@ -36,6 +44,7 @@ export default function MainHeader() {
 
       {/* Input search */}
       <SearchInput />
-    </div>
+      <Services />
+    </Box>
   );
 }

@@ -3,6 +3,7 @@
         "welcome": "Welcome to the Home Page"
     },
     "Header": {
+        "browse_category": "Browse",
         "search_placeholder": "What do you want to play?"
     }
 }

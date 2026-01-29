@@ -3,5 +3,6 @@ export interface SearchInputProps {
     placeholder?: string;
     inputClass?: string;
     inputGroupClass?: string;
+    showEndElement?: boolean;
     onChange?: (value: string) => void;
 }
